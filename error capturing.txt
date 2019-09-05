@@ -1,0 +1,32 @@
+@FindBy(id = "email")
+	private WebElement email;
+
+	public WebElement getEmail() {
+		return email;
+	}
+
+	@FindBy(id = "passwd")
+	private WebElement Password;
+
+	public WebElement getPassword() {
+		return Password;
+	}
+
+	@FindBy(id = "SubmitLogin")
+	private WebElement signInBtn;
+
+	@FindBy(xpath = "//p[contains(text(),'There is 1 error')]")
+	private WebElement message;
+
+	public WebElement getMessage() {
+		return message;
+	}
+
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getSignInBtn() {
+		return signInBtn;
+	}
+

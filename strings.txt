@@ -1,0 +1,19 @@
+same occurance different length based on lentgth
+different occurance ,different length bsaed on first differing character
+
+string s="ABCDEF"
+int compare=s.compareTo("ABD")
+sop(compare)
+-1
+
+A 65 c67
+
+first differing character c
+
+67,-68 hence -1
+
+string s="ABCDEF"
+int compare=s.compareTo("ABC")
+The count of differing characters is 3
+
+

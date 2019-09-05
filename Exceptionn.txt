@@ -1,0 +1,33 @@
+Exception:
+
+it is like a error, if exception occurs program will terminate at that line itself
+
+				Throwable
+	          Exception					Error
+Runtime Exception/          Compiletime exception/
+Unchecked exception		checked exception
+
+Arthimetic			Filenotfound 		Network error
+Nullpoint			IO Exception		Stackoverflow
+Inputmismatch			Classnotfound		JVM Crash
+Indexoutofbound			SQL Exception
+Stringindexoutofbound
+Arrayindexoutofbound
+Numberformat
+
+
+one try block can handle multiple catch block
+try-throws the exception
+when catch block catches the exception
+	if catch block catches the exception next line will be executed
+	or else exception will be thrown and the programwill get terminated
+Super class of all exception is RuntimeException(if you dont know what exception will occur)
+
+if exception occurs in outer try block exception will goto outer catch block only.
+if exception occurs in inner try block exception will goto inner try catch block only.
+
+Each try block can handle only one error line
+
+
+finally block will be handled, based on the line in which block(outer try or inner try) the exception is handled
+If exception doesn't occurs both finally will get executed.

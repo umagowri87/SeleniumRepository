@@ -1,0 +1,27 @@
+Singleton design pattern:
+
+ There will be only one object, and we will use it for wherever it is required
+ create a package utils in (source/main) 
+ create a class as page object manager
+
+public class PageObjectManager{
+
+	public WebDriver driver;
+	(driver should be iniatilezed with a value otherwise it will be null everywhere we need to pass driver as a parameter)
+
+Public PageObjectManager(WebDriver Idriver)
+{
+  this.driver=Idriver;
+}
+Public HomePage Hp;
+Public HomePage hetHp()
+{
+	if(hp==null)
+	{
+ 	hp= new HomePage(driver);
+	}
+	return hp;
+}
+}
+
+

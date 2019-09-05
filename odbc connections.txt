@@ -1,0 +1,47 @@
+depedency
+Mysql connector 8.0.17(maven)
+java project-download connector as jar file.
+copy and paste it in lib folder
+right click add to build path
+step 1:load the driver
+Class.forName(package name.class name)
+1.create schema
+2.create table
+	one column should be Primary key
+	User Id,user name,password
+3.Enter the values
+1 Test User1
+2 Test User2
+3 Test user3
+select * from facebook(table name).credentials(schema name) 
+
+to create connrction with the dbdriver
+
+Class.forName("com.mysql.jdbc.driver")
+url:
+whatconnection:jdbc,odbc
+database:mysql,db2
+IP:local host
+port number:3306
+Database Url,Username,password,query from the developers
+
+
+step 2:connect to driver
+Connection con=DriverManager.getConnection(url,username,password)
+step 3:to pass the query create a statement
+statement stmt=con.createtatement();
+step 4:Execute Query
+ResultSet rs=stmt.executeQuery(query)
+Step5:Result Set  (get the values by passing column name)
+while(rs.next())
+{
+string userId=rs.getString("UserId")
+string un=rs.getString("UserName")
+string up=rs.getString("UserPassword")
+sop(userId);
+sop(un);
+sop(up);
+}
+step6:Close the connection
+con.close();
+sop(userId);

@@ -1,0 +1,46 @@
+GIT:
+ google->Git scm download->windows
+ Sour code management
+ Version control system
+ distrubuted repository
+ SCm to communicate between cloud and local
+UN:umagowri87
+Psd:srikrishna@1987
+
+creATE REPOSITORY
+SEARCH Git Bash
+$ git --version
+to verify the version
+
+$ git config --global user.name "umagowri87"
+$ git config --global user.email "umagowri87"
+
+$ git config --list
+to verify user
+
+goto project folder--> right click git bashhere
+$ git init (master)
+to initialize the folder
+
+goto folder check for git
+
+go to google copy the repository url
+$ git remote add origin url(https:)
+
+$ ls
+$ git add pom.xml
+it will add the pom file
+$ git status
+
+$ git add .
+to add all the files in the folder
+
+why i am pushing the folder to remote
+$ git commit -m "updated script"
+
+upstream
+$ git push -u origin master
+
+$ git add
+$ git commit -m "say the message"
+$ git push

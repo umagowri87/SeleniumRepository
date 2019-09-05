@@ -1,0 +1,65 @@
+Feature File tags
+
+tags={"tagname of feature file,tag name of another feture file"}
+one by one based on the tag order
+we can use || , & 
+
+Scenario Tags
+tags={"tag name of scenario,tag name of scenario"}
+same tag name in multiple feature will execute both scenarios
+
+Based on the scenario order written in feature file scenario will be executed not based on the tags order
+
+Example1:
+feature
+
+@a @b
+Scenario
+@C @b
+Scenario
+@d @b
+Scenario
+
+tags={"@b"}
+
+Exaample 2
+@Ignore
+Scenario
+To ignore or skip: tags={"~@Ignore"}
+
+Example 3:
+To run the scenario which has both tags
+
+@zero @demo
+scenario
+tags={"zero","@demo}
+
+OR
+tags={"@zero,@demp"}
+
+dryRun=true;
+if u have any undefined steps dryrun will show it before running
+but it will show pass
+
+Strict=true;
+if u have any undefined steps it will throw error
+
+monochrome=true;
+show the console in readable manner
+
+Background: pre-requesite of all the scenarios in the feature file
+one background for one feature file
+only precondition
+
+Hooks
+@Before
+ It will run before all the scenarios if you have multiple feature file.
+@After
+ It will run after all the scenarios if you have multiple feature file.
+
+if hooks and Background is thr 
+@before then background then scenario then @after
+
+
+
+

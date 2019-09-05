@@ -1,0 +1,13 @@
+create a excel with id,username password and paste it in library
+take the input using fileinput stream
+File f=new File(filepath);
+FileInputStream fin=new FileInputStream(f);
+choose the file format
+select the row
+select cell
+get cell type
+getstring
+getnumeric
+print it
+
+poiooxml jar file is needed
