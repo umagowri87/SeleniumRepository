@@ -25,7 +25,7 @@ Super class of all exception is RuntimeException(if you dont know what exception
 
 if exception occurs in outer try block exception will goto outer catch block only.
 if exception occurs in inner try block exception will goto inner try catch block only.
-
+dsf
 Each try block can handle only one error line
 
 
