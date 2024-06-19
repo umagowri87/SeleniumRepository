@@ -6,7 +6,7 @@ Git Learning
  distrubuted repository
  SCm to communicate between cloud and local
 UN:umagowri87
-Psd:srikrishna@1987
+Psd:Enjoygit@123
 
 creATE REPOSITORY
 SEARCH Git Bash
